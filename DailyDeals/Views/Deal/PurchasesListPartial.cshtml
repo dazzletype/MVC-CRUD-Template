@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Deal>
+
+<table class="zebra-striped">
+    <thead>
+        <th width="30%">
+            Description
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            VAT
+        </th>
+         <th>
+            Total
+        </th>
+        <th>
+            Provider
+        </th>
+      
+        <th with="80">
+            Date
+        </th>
+        @*<th></th>*@
+    </thead>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <a href="@Url.Action("Edit", "Deal", new { id=item.DealID})">
+                @Html.DisplayFor(modelItem => item.Description)
+            </a>
+        </td>
+        <td>
+            @String.Format("{0:C}", item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VAT)
+        </td>
+          <td>
+            @String.Format("{0:C}", item.TotalWithVAT)
+        </td>
+        <td>
+            <a href="@Url.Action("Edit", "Provider", new { id=item.ProviderID})">
+              @Html.DisplayFor(modelItem => item.Provider.Name)
+            </a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+     @*   <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DealID }, new { @class = "btn primary"})
+           
+            @Html.ActionLink("Details", "Details", new { id=item.DealID }, new { @class = "btn"}) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DealID }, new { @class = "btn"})
+        </td>*@
+    </tr>
+}
+
+ <tfoot>
+        <tr>
+            <td><span class="label">TOTALS: </span></td>
+            <td>@String.Format("{0:C}", Model.Sum(i => i.TotalWithVAT))</td>
+            <td colspan="4"></td>
+        </tr>
+    </tfoot>
+
+</table>
+

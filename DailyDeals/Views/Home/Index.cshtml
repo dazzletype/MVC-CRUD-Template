@@ -1,0 +1,47 @@
+﻿@using System.Configuration
+@using MvcPaging;
+@model IPagedList<Deal>
+
+@{
+    ViewBag.Title = "List of expenses";
+}
+<h1>Welcome to the Daily Deals site</h1>
+<div class="pagingContainer noprint">
+  
+    @{
+        RouteValueDictionary r = new RouteValueDictionary();
+        //r.Add("to", Request["to"]);
+        //r.Add("from", Request["from"]);
+        //r.Add("text", Request["text"]);
+        }
+</div>
+
+<strong>Sort deals by: </strong>
+    <a href="@Url.Action("SortBy", "Home", new { sortBy = "timeending" })">Time Ending</a> | 
+    <a href="@Url.Action("SortBy", "Home", new { sortBy = "category" })">Category</a> |
+    <a href="@Url.Action("SortBy", "Home", new { sortBy = "postdate" })">PostDate</a> |
+    
+<br />
+
+<strong>Find deals by category: </strong>
+    <a href="@Url.Action("FilterByCategory", "Home", new { category = "Women's Fashion" })">Women's Fashion</a> |
+    <a href="@Url.Action("FilterByCategory", "Home", new { category = "Men's Fashion" })">Men's Fashion</a> |
+
+
+<br />
+<br />
+
+
+@foreach (var item in Model) {
+    <div class="deal-container">
+        
+            Description: @Html.DisplayFor(modelItem => item.Description) <br />
+            Ends: @Html.DisplayFor(modelItem => item.ExpiryDate) <br />
+            <img src="@String.Concat(ConfigurationManager.AppSettings["DealImageRoot"], Html.DisplayFor(modelItem => item.ImageURL))" />  <br />
+            @item.Category.Name <br />
+            Posted: @Html.DisplayFor(modelItem => item.CreatedDate)<br />
+    </div>
+}
+
+
+    @Html.Pager(Model.PageSize, Model.PageNumber, Model.TotalItemCount, r)
