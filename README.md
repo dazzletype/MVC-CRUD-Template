@@ -1,4 +1,5 @@
-﻿## ASP.NET MVC3 CRUD Template
+﻿
+# ASP.NET MVC3 CRUD Template
 
 This application serves as a template for creating a base ASP.NET MVC3 CRUD (Create/Read/Update/Database) app.
 
