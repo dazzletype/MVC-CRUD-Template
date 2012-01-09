@@ -17,7 +17,6 @@ The code was initially based on [Ivan Loire's excellent ACME Invoicing App] (htt
    * **AJAX** partial rendering
    * Custom **T4 templates** for customized scaffolding
    * **NUnit** for unit testing and **Moq for object mocking**.
- * Every major development on this invoicing app has been tagged (0.1, 0.2, etc...)
  
 ## Installation
 
@@ -26,24 +25,22 @@ The code was initially based on [Ivan Loire's excellent ACME Invoicing App] (htt
 
 ### Altering connectionStrings section 
 
-Based on convention, EF will look for a connection strign named as the DBContext (in this case "InvoiceDB"), and will use it, so feel free to set the data provider you want:
+Based on convention, EF will look for a connection string named as the DBContext (in this case "TemplateDB"), and will use it, so feel free to set the data provider you want:
 
      <!-- 
          By default (convention over configuration, the connection string with the same name as your DBContext will be used 
-         You can select then wherever you will use SQL CE, SQL Serer Express Edition, etc, here. 
+         You can select then wherever you will use SQL CE, SQL Server Express Edition, etc, here. 
      -->
-     <add name="InvoiceDB" connectionString="Data Source=|DataDirectory|InvoiceDB.sdf" providerName="System.Data.SqlServerCe.4.0" />
+     <add name="TemplateDB" connectionString="Data Source=|DataDirectory|InvoiceDB.sdf" providerName="System.Data.SqlServerCe.4.0" />
      <!--
-     <add name="InvoiceDB" connectionString="Data Source=.\SQLEXPRESS; Integrated Security=True; MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
-     <add name="InvoiceDB" connectionString="metadata=res://*;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=mssql2005a.active-ns.com;Initial Catalog=xxxxxxxxxx.org;user id=xxxxxxxxxxxx;password=xxxxxxxxxxx;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+     <add name="TemplateDB" connectionString="Data Source=.\SQLEXPRESS; Integrated Security=True; MultipleActiveResultSets=True" providerName="System.Data.SqlClient" />
+     <add name="TemplateDB" connectionString="metadata=res://*;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=mssql2005a.active-ns.com;Initial Catalog=xxxxxxxxxx.org;user id=xxxxxxxxxxxx;password=xxxxxxxxxxx;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
      -->
 
 
 
 
 ## LICENSE
-
-Copyright (c) 2011 Iván Loire Mallén -  www.iloire.com
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
