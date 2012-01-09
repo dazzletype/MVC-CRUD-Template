@@ -1,4 +1,4 @@
-﻿# ASP.NET MVC3 CRUD Template
+﻿## ASP.NET MVC3 CRUD Template
 
 This application serves as a template for creating a base ASP.NET MVC3 CRUD (Create/Read/Update/Database) app.
 
@@ -39,14 +39,6 @@ Based on convention, EF will look for a connection strign named as the DBContext
 
 
 
-## The Author
-
-Ivan Loire, [ASP.NET MVC Freelance](http://www.aspnetfreelance.com)
-
-I make clients happy for a living while developing software, so contact me if you need custom modifications on this app, or help in other ASP.NET MVC project.
-I'm currently located in Spain.
-
-Contact: [www.iloire.com](http://www.iloire.com/)
 
 ## LICENSE
 
