@@ -1,0 +1,43 @@
+﻿@model Deal
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Deal</h2>
+
+
+<div class="alert-message warning">
+  <a class="close" href="#">×</a>
+  <p><strong>Are you sure you want to delete this deal?</strong></p>
+</div>
+
+<fieldset>
+    <legend>Deal</legend>
+  <p>
+        <strong>Description: </strong>
+		@Html.DisplayFor(model => model.Description)
+  </p>
+  <p>
+        <strong>Price: </strong>
+		@Html.DisplayFor(model => model.Price)
+  </p>
+  <p>
+        <strong>Provider: </strong>
+		@Html.DisplayFor(model => model.Provider.Name)
+  </p>
+  <p>
+        <strong>Notes: </strong>
+		@Html.DisplayFor(model => model.Notes)
+  </p>
+  <p>
+        <strong>TimeStamp: </strong>
+		@Html.DisplayFor(model => model.CreatedDate)
+  </p>
+</fieldset>
+@using (Html.BeginForm()) {
+	<div class="actions">
+            <input type="submit" class="btn primary" value="Delete" />
+			@Html.ActionLink("Back to List", "Index", null, new { @class = "btn"})
+    </div>
+}

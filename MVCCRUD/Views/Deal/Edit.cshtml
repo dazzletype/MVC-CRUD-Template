@@ -1,0 +1,16 @@
+﻿@model Deal
+
+@{
+    ViewBag.Title = "Edit Deal";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <text>
+    @{Html.RenderPartial("EditOrCreateDealPartial", Model);}
+    </text>
+}
+
+
+

@@ -1,0 +1,186 @@
+﻿<error errorId="8f310e22-5638-4a09-b8da-405b0564a5e0" host="RCS" type="System.Web.HttpException" message="The controller for path '/announce' was not found or does not implement IController." source="System.Web.Mvc" detail="System.Web.HttpException (0x80004005): The controller for path '/announce' was not found or does not implement IController.&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)&#xD;&#xA;   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController&amp; controller, IControllerFactory&amp; factory)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass6.&lt;BeginProcessRequest&gt;b__2()&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.&lt;&gt;c__DisplayClassb`1.&lt;ProcessInApplicationTrust&gt;b__a()&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.&lt;GetCallInAppTrustThunk&gt;b__0(Action f)&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust[TResult](Func`1 func)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2012-01-09T16:23:45.0764364Z" statusCode="404">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:Close&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip&#xD;&#xA;HTTP_HOST:exodus.1337x.org&#xD;&#xA;HTTP_USER_AGENT:uTorrent/2210(25130)&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: Close&#xD;&#xA;Accept-Encoding: gzip&#xD;&#xA;Host: exodus.1337x.org&#xD;&#xA;User-Agent: uTorrent/2210(25130)&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/3/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Active Projects\MVC CRUD Template\MVCCRUD\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="3" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/3" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/announce" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Active Projects\MVC CRUD Template\MVCCRUD\announce" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="info_hash=%15%ab%16%cb%14%ef%0a%80%90%c0%96%94I%25%de%840%d14%f4&amp;peer_id=-UT2210-%2ab-%1f%ad%a1i%13%5d%fd%92_&amp;port=62187&amp;uploaded=23940911&amp;downloaded=0&amp;left=0&amp;corrupt=0&amp;key=1DBA4E8C&amp;event=started&amp;numwant=200&amp;compact=1&amp;no_peer_id=1&amp;ipv6=2002%3aced6%3ad3a5%3a%3aced6%3ad3a5" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="27687" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/announce" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="exodus.1337x.org" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="80" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/7.5" />
+    </item>
+    <item name="URL">
+      <value string="/announce" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Close" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="exodus.1337x.org" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="uTorrent/2210(25130)" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="info_hash">
+      <value string="&#x15;�&#x16;�&#x14;�&#xA;�����I%ބ0�4�" />
+    </item>
+    <item name="peer_id">
+      <value string="-UT2210-*b-&#x1F;��i&#x13;]��_" />
+    </item>
+    <item name="port">
+      <value string="62187" />
+    </item>
+    <item name="uploaded">
+      <value string="23940911" />
+    </item>
+    <item name="downloaded">
+      <value string="0" />
+    </item>
+    <item name="left">
+      <value string="0" />
+    </item>
+    <item name="corrupt">
+      <value string="0" />
+    </item>
+    <item name="key">
+      <value string="1DBA4E8C" />
+    </item>
+    <item name="event">
+      <value string="started" />
+    </item>
+    <item name="numwant">
+      <value string="200" />
+    </item>
+    <item name="compact">
+      <value string="1" />
+    </item>
+    <item name="no_peer_id">
+      <value string="1" />
+    </item>
+    <item name="ipv6">
+      <value string="2002:ced6:d3a5::ced6:d3a5" />
+    </item>
+  </queryString>
+</error>
