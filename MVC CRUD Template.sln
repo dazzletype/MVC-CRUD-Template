@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCRUD", "DailyDeals\MVCCRUD.csproj", "{1895D1C8-FDCE-4BB7-839F-ADB779ED1EC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCRUD", "MVCCRUD\MVCCRUD.csproj", "{1895D1C8-FDCE-4BB7-839F-ADB779ED1EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCRUD Tests", "DailyDeals Tests\MVCCRUD Tests.csproj", "{F54F4D12-10BE-4084-8470-5690D7831A44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCRUD Tests", "MVCCRUD Tests\MVCCRUD Tests.csproj", "{F54F4D12-10BE-4084-8470-5690D7831A44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
